@@ -5,7 +5,7 @@ const Home = () => {
     console.log(restaurants);
 
     useEffect(() => {
-        fetch("http://localhost:5000/state")
+        fetch("https://resturants-server-t-0-n-m-0-y.vercel.app/state")
             .then((res) => res.json())
             .then((data) => setrestaurants(data));
     }, []);
